@@ -160,7 +160,7 @@ plt.show()
 
 # Scatter plot ve regresyon çizgisi
 plt.figure(figsize=(8, 5))
-sns.scatterplot(x=data_sorted['Age'], y=data_sorted['Performance_Gls'], alpha=0.5)
+sns.scatterplot(x=data_sorted['Playing Time_90s'], y=data_sorted['Performance_Gls'], alpha=0.5)
 plt.title("Oynama Süresi ile Performans İlişkisi", fontsize=14)
 plt.xlabel("Oynama Süresi (90 dk)", fontsize=12)
 plt.ylabel("Gol Performansı", fontsize=12)
