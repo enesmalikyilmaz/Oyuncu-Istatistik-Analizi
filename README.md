@@ -1,3 +1,5 @@
+##OYUNCU İSTATİSTİK ANALİZİ
+
 ## Veri Hazırlama: DataFrame’i Kullanılabilir Hale Getirme
 
 Ham veri üzerinde çeşitli veri hazırlama teknikleri uygulanarak makine öğrenimi modelleri için kullanılabilir hale getirilmiştir. Veri hazırlama sürecinde izlenen adımlar:
