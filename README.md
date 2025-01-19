@@ -113,11 +113,14 @@ Bu analiz, oyuncu performansını tahmin etmek için kullanılabilir. Özellikle
 Bu çalışmamın sonucunda, Linear Regression modeli bu veri seti üzerinde en iyi performansı gösterdiğini tespit etdim. Ancak, daha geniş bir veri seti ve hiperparametre optimizasyonuyla diğer modellerin de performansı artırılabilir.
 ## 📜 Dosyanın İndirilmesi
 
-Proje kapsamında oluşturulan Python kodlarıma aşağıdaki bağlantıdan ulaşabilirsiniz:
+Projede kullanılan dosyalara aşağıdaki bağlantılardan ulaşabilirsiniz:
 
-**[Makine Öğrenmesi Final_Proje 22360859004.py Dosyasını İndir](Makine%20%C3%96%C4%9Frenmesi%20Final_Proje%2022360859004.py)** linkine tıklayarak indirme simgesine bastığınızda dosya cihazınıza inmiş olacaktır.
+1. **Python Kod Dosyası**:
+   - [Makine Öğrenmesi Final Projesi](Makine%20%C3%96%C4%9Frenmesi%20Final_Proje%2022360859004.py)
 
----
+2. **Veri Seti (CSV)**:
+   - [Big 5 Players Stats 2023/2024](big_5_players_stats_2023_2024.csv)
+     
 ## YouTube Linki
 https://youtu.be/0MHJNO2Zpxw
 
