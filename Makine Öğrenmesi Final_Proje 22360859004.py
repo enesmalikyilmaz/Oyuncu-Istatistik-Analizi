@@ -11,19 +11,7 @@ from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Veriyi yüklüyoruz
-data = pd.read_csv('/content/big_5_players_stats_2023_2024 (1).csv')  # Dosya yolunuza göre düzenleyin
-
-# İlk satırlara göz atıyoruz
-print(data.head())
-
-# Veri setinin genel özelliklerine bakış attık
-print(data.info())
-
-# Eksik veri var mı diye bakıyoruz
-print("Eksik değerler:\n", data.isnull().sum())
-
-# Veriyi yüklüyoruz
-data = pd.read_csv('/content/big_5_players_stats_2023_2024 (1).csv')  # Dosya yolunuza göre düzenleyin
+data = pd.read_csv('/content/big_5_players_stats_2023_2024.csv')  # Dosya yolunuza göre düzenleyin
 
 # İlk satırlara göz atıyoruz
 print(data.head())
