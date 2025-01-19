@@ -115,6 +115,6 @@ Bu çalışmamın sonucunda, Linear Regression modeli bu veri seti üzerinde en 
 
 Proje kapsamında oluşturulan Python kodlarına aşağıdaki bağlantıdan ulaşabilirsiniz:
 
-**[Makine Öğrenmesi Final_Proje 22360859004.py Dosyasını İndir](Makine%20%C3%96%C4%9Frenmesi%20Final_Proje%2022360859004.py)**
+**[Makine Öğrenmesi Final_Proje 22360859004.py Dosyasını İndir](Makine%20%C3%96%C4%9Frenmesi%20Final_Proje%2022360859004.py)** linkine tıklayarak indirme simgesine bastığınızda dosya cihazınıza inmiş olacaktır.
 
 ---
