@@ -3,7 +3,7 @@
 Ham veri üzerinde çeşitli veri hazırlama teknikleri uygulanarak makine öğrenimi modelleri için kullanılabilir hale getirilmiştir. Veri hazırlama sürecinde izlenen adımlar:
 
 ### 1. Eksik Değerlerin Analizi ve İşlenmesi
-Eksik veya hatalı değerler analiz sürecini olumsuz etkileyebilir. Bu değerler aşağıdaki yöntemlerle işlenmiştir:
+Eksik değerleri analiz sürecini olumsuz etkileyebilir. Bu değerleri aşağıdaki yöntemlerle işledim:
 - **Eksik Değerlerin Belirlenmesi**:
   ```python
   print(data.isnull().sum())
