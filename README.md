@@ -13,15 +13,18 @@ Eksik değerleri analiz sürecini olumsuz etkileyebilir. Bu değerleri aşağıd
 -**Eksik Değerlerin Doldurulması**: Sayısal sütunlardaki eksik değerler sütun ortalaması ile doldurulmuştur.
   ```python
   data = data.fillna(data.mean())
+  ```
 ### 2. Veri Türlerinin Dönüştürülmesi
 Veri türlerindeki hatalar düzeltilmiştir:
 -**Sayısal Değerlere Dönüştürme**:
   ```python
   data['Age'] = pd.to_numeric(data['Age'], errors='coerce')
   data['Performance_Gls'] = pd.to_numeric(data['Performance_Gls'], errors='coerce')
+  ```
 -**Hatalı Değerlerin Kaldırılması**:
   ```python
   data = data.dropna(subset=['Age', 'Performance_Gls'])
+  ```
 ### 3. Özelliklerin Ölçeklendirilmesi
 Farklı ölçeklerdeki sayısal değerler standart bir ölçeğe getirilmiştir:
 
@@ -30,6 +33,7 @@ Farklı ölçeklerdeki sayısal değerler standart bir ölçeğe getirilmiştir:
   scaler = StandardScaler()
   scaled_features = scaler.fit_transform(data[['Age', 'Playing Time_90s', 'Expected_xG', 'Expected_xAG']])
   data[['Age', 'Playing Time_90s', 'Expected_xG', 'Expected_xAG']] = scaled_features
+  ```
 
 
 
