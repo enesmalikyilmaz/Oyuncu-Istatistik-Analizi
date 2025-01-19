@@ -1,3 +1,37 @@
+## Veri Hazırlama: DataFrame’i Kullanılabilir Hale Getirme
+
+Ham veri üzerinde çeşitli veri hazırlama teknikleri uygulanarak makine öğrenimi modelleri için kullanılabilir hale getirilmiştir. Veri hazırlama sürecinde izlenen adımlar:
+
+### 1. Eksik Değerlerin Analizi ve İşlenmesi
+Eksik veya hatalı değerler analiz sürecini olumsuz etkileyebilir. Bu değerler aşağıdaki yöntemlerle işlenmiştir:
+- **Eksik Değerlerin Belirlenmesi**:
+  ```python
+  print(data.isnull().sum())
+-**Eksik Değerlerin Doldurulması**: Sayısal sütunlardaki eksik değerler sütun ortalaması ile doldurulmuştur.
+  ```python
+  data = data.fillna(data.mean())
+### 2. Veri Türlerinin Dönüştürülmesi
+Veri türlerindeki hatalar düzeltilmiştir:
+-**Sayısal Değerlere Dönüştürme**:
+  ```python
+  data['Age'] = pd.to_numeric(data['Age'], errors='coerce')
+  data['Performance_Gls'] = pd.to_numeric(data['Performance_Gls'], errors='coerce')
+-**Hatalı Değerlerin Kaldırılması**:
+  ```python
+  data = data.dropna(subset=['Age', 'Performance_Gls'])
+### 3. Özelliklerin Ölçeklendirilmesi
+Farklı ölçeklerdeki sayısal değerler standart bir ölçeğe getirilmiştir:
+
+  ```python
+  from sklearn.preprocessing import StandardScaler
+  scaler = StandardScaler()
+  scaled_features = scaler.fit_transform(data[['Age', 'Playing Time_90s', 'Expected_xG', 'Expected_xAG']])
+  data[['Age', 'Playing Time_90s', 'Expected_xG', 'Expected_xAG']] = scaled_features
+
+
+
+
+
 # Kapsamlı Sonuç Analizi ve Değerlendirme
 
 Bu çalışmada, oyuncu performansını tahmin etmek için **Linear Regression (Doğrusal Regresyon)**, **Random Forest (Rastgele Orman)** ve **Support Vector Regression (Destek Vektör Regresyonu)** olmak üzere üç farklı makine öğrenimi modeli uyguladım. Modellerin sonuçları **MSE (Ortalama Kare Hatası)** ve **R² (Açıklama Katsayısı)** parametreleri ile karşılaştırıp değerlendirdim.
