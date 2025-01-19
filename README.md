@@ -119,4 +119,6 @@ Proje kapsamında oluşturulan Python kodlarıma aşağıdaki bağlantıdan ula�
 
 ---
 ## YouTube Linki
+https://youtu.be/0MHJNO2Zpxw
 
+sns.scatterplot(x=data_sorted['Playing Time_90s'], y=data_sorted['Performance_Gls'], alpha=0.5) x kısmı videoda 'age' olarak görünüyor. Bu düzeltildi.
