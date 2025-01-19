@@ -9,6 +9,7 @@ Eksik değerleri analiz sürecini olumsuz etkileyebilir. Bu değerleri aşağıd
 - **Eksik Değerlerin Belirlenmesi**:
   ```python
   print(data.isnull().sum())
+  ```
 -**Eksik Değerlerin Doldurulması**: Sayısal sütunlardaki eksik değerler sütun ortalaması ile doldurulmuştur.
   ```python
   data = data.fillna(data.mean())
