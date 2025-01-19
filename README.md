@@ -1,4 +1,4 @@
-## OYUNCU İSTATİSTİK ANALİZİ
+##             OYUNCU İSTATİSTİK ANALİZİ
 
 ## Veri Hazırlama: DataFrame’i Kullanılabilir Hale Getirme
 
